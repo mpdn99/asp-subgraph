@@ -1,6 +1,6 @@
 specVersion: 0.0.4
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: IDO
@@ -18,8 +18,8 @@ dataSources:
         - Report
       abis:
         - name: IDO
-          file: ./abis/IDO.json
+          file: IDO\abis\IDO.json
       eventHandlers:
         - event: LogBuy(string,string,uint256,uint256,uint256)
           handler: handleLogBuy
-      file: ./src/ido.ts
+      file: IDO\IDO.wasm
