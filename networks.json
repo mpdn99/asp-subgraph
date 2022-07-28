@@ -1,7 +1,14 @@
 {
   "ropsten": {
     "IDO": {
-      "address": "0xa531489081dcc672c9C6cd11039bcF76d5B52BE1"
+      "address": "0xa531489081dcc672c9C6cd11039bcF76d5B52BE1",
+      "startBlock": 12583411
+    }
+  },
+  "mumbai": {
+    "IDO": {
+      "address": "0x44e7BeB6b6219e35e16A35e34b7E10d9b793450d",
+      "startBlock": 27366044
     }
   }
 }

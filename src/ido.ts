@@ -16,12 +16,12 @@ export function handleLogBuy(event: LogBuy): void {
   let report = Report.load(event.params.projectSlug.concat(event.params.refSlug))
   if (!report) {
     report = new Report(event.params.projectSlug.concat(event.params.refSlug))
+    report.projectSlug = event.params.projectSlug
+    report.refSlug = event.params.refSlug
     report.totalBuyAmount = new BigInt(0)
     report.totalPaymentAmount = new BigInt(0)
     report.totalSystemProfit = new BigInt(0)
   }
-  report.projectSlug = event.params.projectSlug
-  report.refSlug = event.params.refSlug
   report.totalBuyAmount =  report.totalBuyAmount.plus(event.params.buyAmount)
   report.totalPaymentAmount = report.totalPaymentAmount.plus(event.params.paymentAmount)
   report.totalSystemProfit = report.totalSystemProfit.plus(event.params.systemProfit)

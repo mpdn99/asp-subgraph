@@ -127,6 +127,15 @@ export class Report extends Entity {
     this.set("id", Value.fromString(value));
   }
 
+  get projectSlug(): string {
+    let value = this.get("projectSlug");
+    return value!.toString();
+  }
+
+  set projectSlug(value: string) {
+    this.set("projectSlug", Value.fromString(value));
+  }
+
   get refSlug(): string | null {
     let value = this.get("refSlug");
     if (!value || value.kind == ValueKind.NULL) {
@@ -142,15 +151,6 @@ export class Report extends Entity {
     } else {
       this.set("refSlug", Value.fromString(<string>value));
     }
-  }
-
-  get projectSlug(): string {
-    let value = this.get("projectSlug");
-    return value!.toString();
-  }
-
-  set projectSlug(value: string) {
-    this.set("projectSlug", Value.fromString(value));
   }
 
   get totalBuyAmount(): BigInt {

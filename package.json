@@ -1,5 +1,5 @@
 {
-  "name": "asp-subgraph",
+  "name": "asp",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",

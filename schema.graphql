@@ -9,8 +9,8 @@ type Buy @entity {
 
 type Report @entity {
   id: ID!
-  refSlug: String
   projectSlug: String!
+  refSlug: String
   totalBuyAmount: BigInt!
   totalPaymentAmount: BigInt!
   totalSystemProfit: BigInt!

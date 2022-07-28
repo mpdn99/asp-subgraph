@@ -6,8 +6,8 @@ dataSources:
     name: IDO
     network: ropsten
     source:
-      address: "0xa531489081dcc672c9C6cd11039bcF76d5B52BE1"
       abi: IDO
+      address: "0xa531489081dcc672c9C6cd11039bcF76d5B52BE1"
       startBlock: 12583411
     mapping:
       kind: ethereum/events
